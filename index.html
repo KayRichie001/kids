@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preprimary Learning Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Preprimary Learning</h1>
+    </header>
+
+    <!-- Main Menu -->
+    <section id="menu">
+        <div class="menu-item" onclick="showAlphabetSection()">
+            <h2>Learn Alphabets</h2>
+        </div>
+        <div class="menu-item" onclick="showNumberGame()">
+            <h2>Play with Numbers</h2>
+        </div>
+    </section>
+
+    <!-- Alphabet Learning Section -->
+    <section id="alphabet-section" class="hidden">
+        <h2>Learn the Alphabet</h2>
+        <div id="alphabet-buttons">
+            <button onclick="playLetterSound('A')">A</button>
+            <button onclick="playLetterSound('B')">B</button>
+            <button onclick="playLetterSound('C')">C</button>
+            <button onclick="playLetterSound('D')">D</button>
+            <button onclick="playLetterSound('E')">E</button>
+            <button onclick="playLetterSound('F')">F</button>
+            <button onclick="playLetterSound('G')">G</button>
+            <button onclick="playLetterSound('H')">H</button>
+            <button onclick="playLetterSound('I')">I</button>
+            <button onclick="playLetterSound('J')">J</button>
+            <button onclick="playLetterSound('K')">K</button>
+            <button onclick="playLetterSound('L')">L</button>
+            <button onclick="playLetterSound('M')">M</button>
+            <button onclick="playLetterSound('N')">N</button>
+            <button onclick="playLetterSound('O')">O</button>
+            <button onclick="playLetterSound('P')">P</button>
+            <button onclick="playLetterSound('Q')">Q</button>
+            <button onclick="playLetterSound('R')">R</button>
+            <button onclick="playLetterSound('S')">S</button>
+            <button onclick="playLetterSound('T')">T</button>
+            <button onclick="playLetterSound('U')">U</button>
+            <button onclick="playLetterSound('V')">V</button>
+            <button onclick="playLetterSound('W')">W</button>
+            <button onclick="playLetterSound('X')">X</button>
+            <button onclick="playLetterSound('Y')">Y</button>
+            <button onclick="playLetterSound('Z')">Z</button>
+            
+        </div>
+        <button onclick="goBack()">Back to Menu</button>
+    </section>
+
+    <!-- Number Game Section -->
+    <section id="number-game" class="hidden">
+        <h2>Number Drag-and-Drop Game</h2>
+        <div class="game-zone">
+            <div class="drop-zone" data-number="1">Drop 1 here</div>
+            <div class="drop-zone" data-number="2">Drop 2 here</div>
+            <div class="drop-zone" data-number="3">Drop 3 here</div>
+            <div class="drop-zone" data-number="4">Drop 4 here</div>
+            <div class="drop-zone" data-number="5">Drop 5 here</div>
+            <div class="drop-zone" data-number="6">Drop 6 here</div>
+            <div class="drop-zone" data-number="7">Drop 7 here</div>
+            <div class="drop-zone" data-number="8">Drop 8 here</div>
+            <div class="drop-zone" data-number="9">Drop 9 here</div>
+            <div class="drop-zone" data-number="10">Drop 10 here</div>
+            <div class="drop-zone" data-number="0">Drop 0 here</div>
+            
+        </div>
+        <div id="letter-display">
+
+        </div>
+        <div class="draggables">
+            <div class="draggable" draggable="true" data-number="1">1</div>
+            <div class="draggable" draggable="true" data-number="2">2</div>
+            <div class="draggable" draggable="true" data-number="3">3</div>
+            <div class="draggable" draggable="true" data-number="4">4</div>
+            <div class="draggable" draggable="true" data-number="5">5</div>
+            <div class="draggable" draggable="true" data-number="6">6</div>
+            <div class="draggable" draggable="true" data-number="7">7</div>
+            <div class="draggable" draggable="true" data-number="8">8</div>
+            <div class="draggable" draggable="true" data-number="9">9</div>
+            <div class="draggable" draggable="true" data-number="10">10</div>
+            <div class="draggable" draggable="true" data-number="0">0</div>
+            
+        </div>
+        <div id="congrats-message" class="hidden congrats">Congratulations! You Did it!
+
+        </div>
+        <button onclick="goBack()">Back to Menu</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

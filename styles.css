@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('media/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.menu-item {
+    margin: 20px;
+    padding: 20px;
+    background-color: #87ceeb;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#alphabet-buttons button {
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    background-color: #add8e6;
+    border: none;
+    border-radius: 5px;
+}
+
+.game-zone {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.drop-zone {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border: 2px dashed #aaa;
+    background-color: #fffacd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.draggables {
+    display: flex;
+    justify-content: center;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #add8e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+}
